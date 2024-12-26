@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/BGN.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+
+}
+
+.hero {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    position: relative;
+    gap: 15px;
+}
+
+.hero> :first-child {
+    font-weight: 2000;
+    font-size: 70px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+.hero div{
+    display: flex;
+    gap: 5px;
+}
+.hero> :nth-child(4) input {
+    background-color: rgba(23, 23, 23, 0.3);
+    padding: 8px 146px 7px 15px;
+    border-radius: 5px;
+    border: .5px solid #938f8f;
+    color: white;
+    border-inline-style: solid;
+}
+
+.hero> :nth-child(4) button {
+    background-color: red;
+    font-weight: bold;
+    color: white; 
+    border-radius: 5px;
+    padding: 15px 35px;
+    position: relative;
+    z-index: 10;
+    font-size: 23px;
+}
+
+nav {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+span img {
+    color: red;
+    width: 180px;
+    z-index: 10;
+    margin-top: 20px;
+    position: relative;
+}
+
+.signinbtn button {
+    background-color: red;
+    font-weight: bold;
+
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    position: relative;
+    z-index: 10;
+}

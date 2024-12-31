@@ -22,7 +22,7 @@ body {
     position: absolute;
     height: 100vh;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.7;
     background-color: black;
 
 }
@@ -36,12 +36,12 @@ body {
     color: white;
     justify-content: center;
     position: relative;
-    gap: 15px;
+    gap: 18px;
 }
 
 .hero> :first-child {
     font-weight: 2000;
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
 }
 
@@ -57,13 +57,15 @@ body {
     text-align: center;
     line-height: 24px;
 }
-.hero div{
+
+.hero div {
     display: flex;
     gap: 5px;
 }
+
 .hero> :nth-child(4) input {
     background-color: rgba(23, 23, 23, 0.3);
-    padding: 8px 146px 7px 15px;
+    padding: 8px 200px 7px 15px;
     border-radius: 5px;
     border: .5px solid #938f8f;
     color: white;
@@ -73,7 +75,7 @@ body {
 .hero> :nth-child(4) button {
     background-color: red;
     font-weight: bold;
-    color: white; 
+    color: white;
     border-radius: 5px;
     padding: 15px 35px;
     position: relative;
@@ -107,4 +109,211 @@ span img {
     padding: 8px 20px;
     position: relative;
     z-index: 10;
+}
+
+.arrow {
+    position: absolute;
+    width: 180%;
+    left: -40%;
+    height: 100%;
+    border-top: solid .25rem red;
+    margin: auto;
+    color: white;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    gap: 10px;
+}
+
+.line {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: -5rem;
+    height: 100%;
+    z-index: 1;
+}
+
+.trending {
+    position: absolute;
+    top: 60px;
+    width: 44%;
+    font-size: 20px;
+}
+
+.buton {
+    position: absolute;
+    top: 120px;
+    width: 41%;
+    font-size: 20px;
+}
+
+.buton select {
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: .5px solid rgb(135, 135, 135);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+ 
+#dropdown option{
+    background-color: white;
+    color: black; 
+}
+
+.movies {
+    max-width: 41%;
+    z-index: 3;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 3rem;
+}
+
+.image {
+    background-image: url("assets/images/BGN.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 11.1rem;
+    height: 15.6rem;
+    margin: 20px;
+    display: inline-block;
+
+    border-radius: 5px;
+}
+
+#btn {
+    width: 26px;
+    border: none;
+    height: 126px;
+    border-radius: 10px;
+    margin-top: 3prem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* More */
+
+.more {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+     
+    width: 100%;
+    background-color: #000000;
+    gap: 1.5rem;
+    position: absolute;
+}
+
+.more>h1:first-child {
+    width: 80%;
+    color: white;
+    z-index: 2;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 13rem;
+    color: white;
+    height: 19rem;
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    border: 1px solid black;
+    border-radius: 11px;
+}
+#box svg{
+    margin-left: 80%;
+}
+
+.faq {
+    color: white;
+    width: 80%;
+    margin-bottom: 5%;
+}
+ li{
+    list-style-type: none;
+     
+ }
+.faq-list{
+    width: 100%;
+    background-color: #212121;
+    height: 2rem;
+    margin-top: .5rem;
+}
+.h3-div:hover .faq-list{
+    cursor: pointer;
+    background-color: #626262;
+}
+.h3-div div{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden-p{
+    line-height: 2rem;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 2px;
+    background-color: #212121;
+    padding: 1.5rem;
+    display: none;
+}
+.readytowatch{
+    width: 100%;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    font-size: 18px;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+
+.readytowatch> :nth-child(2) input {
+    background-color: rgb(111 112 156 / 30%);
+    padding: 25px 308px 18px 15px;
+    border-radius: 5px;
+    border: .5px solid #938f8f;
+    color: white;
+    border-inline-style: solid;
+}
+
+.readytowatch> :nth-child(2) button {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 35px;  
+    font-size: 23px;
 }

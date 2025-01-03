@@ -39,21 +39,21 @@ btn[1].onclick = () => {
 
 const list = document.querySelectorAll(".h3-div");
 let flag = 1;
-var count=0;
-list.forEach((l)=>{
-    l.onclick=()=>{
-        if(flag==0){
-            flag=1;
-        l.childNodes[3].style.display='none';
-    }
-    else{
-        flag=0;
-        list.forEach((li)=>{
-            li.childNodes[3].style.display='none';
-        });
-        
-        l.childNodes[3].style.display='block';
-    }
+var count = 0;
+list.forEach((l) => {
+    l.onclick = () => {
+        if (flag == 0) {
+            flag = 1;
+            l.childNodes[3].style.display = 'none';
+        }
+        else {
+            flag = 0;
+            list.forEach((li) => {
+                li.childNodes[3].style.display = 'none';
+            });
+
+            l.childNodes[3].style.display = 'block';
+        }
 
     }
 

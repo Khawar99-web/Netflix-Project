@@ -81,6 +81,7 @@ body {
     position: relative;
     z-index: 10;
     font-size: 23px;
+    cursor: pointer;
 }
 
 nav {
@@ -103,7 +104,7 @@ span img {
 .signinbtn button {
     background-color: red;
     font-weight: bold;
-
+    cursor: pointer;
     color: white;
     border-radius: 5px;
     padding: 8px 20px;
@@ -185,8 +186,13 @@ span img {
     height: 15.6rem;
     margin: 20px;
     display: inline-block;
-
     border-radius: 5px;
+}
+.image:hover{
+    cursor: pointer;
+	transform: scale(1.1) translatez(0px);
+    
+	transition: ease-in-out all 0.3s;
 }
 
 #btn {
@@ -316,4 +322,43 @@ span img {
     border-radius: 5px;
     padding: 15px 35px;  
     font-size: 23px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-div{
+   display: flex;
+    width: 100%;  
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Questions-c{
+    width: 80%;
+    margin-left: 0;
+    padding: 1rem;
+    font-size: 20px; 
+}
+#Questions-c a{
+    color: rgba(255, 255, 255, 0.7);
+}
+#footer-list{
+    
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    
+}
+#footer-list ul{
+    line-height: 30px;
+}
+#languae{ 
+    background: transparent;
+    color: white; 
+    padding: 10px;
+    padding-right: 12px;
+border-radius: 5px;
 }
